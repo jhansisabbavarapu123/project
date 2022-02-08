@@ -1,0 +1,56 @@
+*{
+    margin: 0px;
+    padding:0px;
+}
+body{
+    background-image: url(loginpage.jpg);
+    background-size: cover;
+    font-family: Times New Roman;
+}
+h1{
+    font-size:40px;
+    color:white;
+}
+.col-md-5{
+    margin-top: 80px;
+    box-shadow: -1px 1px 60px 10px black;
+    background: rgba(0,0,0,0,4);
+}
+.label{
+    font-weight:normal;
+    margin-top:15px;
+    color:white;
+    font-size:19px;
+}
+.form-control{
+    background:transparent;
+    border-radius: 0px;
+    border:0px;
+    border-bottom:1px solid white;
+    font-size:18px;
+    margin-top: 15px;
+    color:white;
+}
+input[type="checkbox"]{
+    margin-top: 15px;
+    width:15px;
+    height:15px;
+}
+small{
+    font-size: 18px;
+    color:white;
+}
+input[type="radio"]{
+    margin-top: 22px;
+}
+option{
+    color:gray;
+}
+.btn-default{
+    margin-top: 20px;
+    font-size: 18px;
+    width:120px;
+    margin-left: 80px;
+    margin-right: 20px;
+    background-color: green;
+}
