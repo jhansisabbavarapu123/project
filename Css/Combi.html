@@ -1,0 +1,24 @@
+<html>
+<head>
+<script>
+    <title>Registation form</title>
+    function calculate(){
+        var x=document.getElementById("uname").value
+        var y=document.getElementById("pwrd").value
+  if(x===y){
+            alert("valid")
+        }
+        else{
+            alert("invalid")
+        }
+            }
+</script>
+</head>
+<body>
+    <table align="center">
+    <tr><td>username:</td><td><input style="background-color:pink;color:black;" type="text" id="uname"></td></tr>
+    <tr><td>password:</td><td><input style="background-color:blue;color:white;" type="password" id="pword"></td></tr>
+    <tr><td><button onclick="calculate()">submit</buttion></td></tr>
+         </table>
+    </body>
+</html>
