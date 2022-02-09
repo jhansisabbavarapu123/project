@@ -1,0 +1,45 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+body{
+    background-image: url(loginpage.jpg);
+    background-size:cover;
+    background-attachment: fixed;
+    font-family:Times New Roman;
+}
+h1{
+    font-size: 40px;
+    color:white;
+}
+h3{
+    font-size:25px;
+    color:white;
+}
+.form-control{
+    background: transparent;
+    border-radius:0px;
+    border:0px;
+    border-bottom:1px solid white;
+    font-size:18px;
+    margin-top:15px;
+    height:40px;
+    color:white;
+}
+input[type="checkbox"]{
+    margin-top:15px;
+    width:15px;
+    height:15px;
+}
+option{
+    color:gray;
+}
+.button{
+    margin-top:20px;
+    font-size:18px;
+    width:120px;
+    margin-left:80px;
+    margin-bottom:20px;
+    background-color: greenyellow;
+
+}
