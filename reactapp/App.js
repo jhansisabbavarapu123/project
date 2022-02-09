@@ -1,20 +1,39 @@
-import React, { Component } from 'react';  
-import Hoc from './HOC';  
-function add(p,t,r){ return p*t*r/100;}
-function highrorder(p,t,addReference){
-  return addReference(p,t,5);
-}
-class App extends Component {  
- 
-  render() {  
-    return (  
-      <div>  
-        <h2>HOC Example</h2>  
-        HOC Implementation
-        <br/>{highrorder(40000,4,add)}
-      </div>  
-    )  
+import React,{Component} from 'react';
+import './App.css';
+class App extends Component{
+  constructor(props){
+    super(props);
+    this.state={ message:prompt("Enter message","my message"),mobile:'1234567890'}
+   
   }  
+  render(){
+    return(<div>
+      Welcome to {this.props.name}<br/>
+      Available in {this.props.location}<br/>
+      Training in{this.props.job}
+      <TestMe/>
+     <br/>
+      <MessageSender message={this.state.message} mobile={this.state.mobile}></MessageSender>
+    </div> );
+  }
+}
+App.defaultProps = {  
+  name: "Jhansi" ,
+  location:"India",
+  job:"software"
 }  
-App = Hoc(App);  
+class TestMe extends Component{
+  render(){
+    return(<font face='calibre' color="pink" size='20'>Welcome to Application development</font>);
+  }
+}
+class MessageSender extends Component{
+  render(){
+    return(<div>
+  
+      <hr/>
+      <font color='blue'>{this.props.message}</font>
+           <h3>{this.props.mobile}</h3></div>);
+  }
+}
 export default App;

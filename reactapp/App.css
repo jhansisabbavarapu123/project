@@ -1,14 +1,10 @@
 .App {
   text-align: center;
 }
-h1{
-  background-color: #61dafb;
-  font-size: 20px;
+img{
+  background-color:black;
 }
-td,tr{
-  background-color: azure;
-  border: black;
-}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
